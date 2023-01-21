@@ -1,0 +1,24 @@
+@font-face {
+	font-family: bainsley;
+	src: url(/fonts/Bainsley_Bold.woff2) format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: bainsley;
+	src: url(/fonts/Bainsley_Bold_Italic.woff2) format('woff2');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: bainsley;
+	src: url(/fonts/Bainsley_Italic.woff2) format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: bainsley;
+	src: url(/fonts/Bainsley_Roman.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

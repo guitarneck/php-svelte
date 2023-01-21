@@ -1,0 +1,90 @@
+<head>
+   <style>
+      body {
+         background-color: #dec295;
+      }
+
+      .mainbox {
+         background-color: #dec295;
+         margin: auto;
+         height: 600px;
+         width: 600px;
+         position: relative;
+      }
+
+      .font-family {
+         font-family: sans-serif;
+         color: #ffffff;
+         font-size: 11rem;
+      }
+
+      .err-left {
+         position: absolute;
+         left: 20%;
+         top: 8%;
+         rotate: -10deg;
+      }
+
+      .what {
+         font-size: 7rem;
+         font-weight: bold;
+         position: absolute;
+         left: 40%;
+         top: 12%;
+         text-align: center;
+         width: 7.5rem;
+         height: 7.5rem;
+         border: .8rem solid #fff;
+         border-radius: 50%;
+         animation: rotation 2.5s infinite linear;
+      }
+
+      @keyframes rotation {
+         from {
+            transform: rotate(0deg);
+         }
+         to {
+            transform: rotate(359deg);
+         }
+      }
+
+      .err-right {
+         position: absolute;
+         left: 68%;
+         top: 8%;
+         rotate: 10deg;
+      }
+
+      .msg {
+         color: #444;
+         font-size: 1.6rem;
+         text-align: center;
+         position: absolute;
+         left: 16%;
+         top: 45%;
+         width: 75%;
+      }
+
+      a {
+         text-decoration: none;
+         color: white;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="font-family mainbox">
+      <div class="err-left">4</div>
+      <div class="what">#</div>
+      <div class="err-right">5</div>
+      <div class="msg">The method specified is not allowed. No, no, no...
+         <p>Let's go <a href="/">home</a> and try from there.</p>
+      </div>
+   </div>
+</body>
+
+</html>

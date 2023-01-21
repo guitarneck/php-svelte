@@ -1,0 +1,100 @@
+<head>
+   <style>
+      body {
+         background-color: #de95c2;
+      }
+
+      .mainbox {
+         background-color: #de95c2;
+         margin: auto;
+         height: 600px;
+         width: 600px;
+         position: relative;
+      }
+
+      .font-family {
+         font-family: sans-serif;
+         color: #c00;
+         font-size: 11rem;
+      }
+
+      .err-left {
+         position: absolute;
+         left: 20%;
+         top: 8%;
+         rotate: -10deg;
+      }
+
+      .what {
+         font-size: 7rem;
+         font-weight: bold;
+         position: absolute;
+         left: 40%;
+         top: 12%;
+         text-align: center;
+         width: 7.5rem;
+         height: 7.5rem;
+         border: .8rem solid #c00;
+         border-radius: 50%;
+         animation: rotation 2.5s infinite linear;
+      }
+
+      @keyframes rotation {
+         from {
+            transform: rotate(0deg);
+         }
+         to {
+            transform: rotate(359deg);
+         }
+      }
+
+      .err-right {
+         position: absolute;
+         left: 68%;
+         top: 8%;
+         rotate: 10deg;
+      }
+
+      .msg {
+         color: #444;
+         font-size: 1.6rem;
+         text-align: center;
+         position: absolute;
+         left: 16%;
+         top: 45%;
+         width: 75%;
+      }
+
+      a {
+         text-decoration: none;
+         color: white;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+
+      svg {
+         width:1.2rem
+      }
+   </style>
+</head>
+
+<body>
+   <div class="font-family mainbox">
+      <div class="err-left">5</div>
+      <div class="what">!</div>
+      <div class="err-right">0</div>
+      <div class="msg">Unfortunately, something went wrong on our end. We are currently trying to fix the problem.
+         <p>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+               <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30 S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+               <path d="M30,6c-0.552,0-1,0.447-1,1v23H14c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1V7C31,6.447,30.552,6,30,6z"></path>
+            </svg>
+            Wait a few minutes, or refresh the page...
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+    "name": "guitarneck/php-svelte",
+    "description": "Using svelte and php",
+    "type": "project",
+    "require-dev": {
+        "guitarneck/taphp": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "guitarneck",
+            "email": "guitarneck@free.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phroute/phroute": "^2.2"
+    },
+    "optimize-autoloader": true,
+    "classmap-authoritative": true,
+    "autoload": {
+        "exclude-from-classmap": [
+            "sources/format/*"
+        ],
+        "classmap": ["bundles/","includes/"]
+    },
+    "scripts": {
+        "test": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php tests/all.php"
+        ],
+        "upcache": "@php routes/routes.php"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests!",
+        "upcache": "Update the cache of the routes"
+    }
+}

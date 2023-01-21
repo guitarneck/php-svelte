@@ -1,0 +1,74 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+
+extends:
+  - standard
+
+parser:
+  "@babel/eslint-parser"
+
+parserOptions:
+  requireConfigFile: false
+  ecmaVersion: 2021
+  sourceType: module
+  allowImportExportEverywhere: true
+
+rules:
+  indent:
+    - error
+    - 3
+    - VariableDeclarator: first
+      SwitchCase: 1
+      ignoreComments: true
+
+  eol-last: off
+
+  brace-style:
+    - error
+    - stroustrup
+    - allowSingleLine: true
+
+  space-in-parens:
+    - error
+    - never
+
+  one-var:
+    - error
+    - consecutive
+
+  key-spacing:
+    - error
+    - beforeColon: true
+      afterColon: true
+      align:
+        beforeColon: true
+        afterColon: true
+        on: colon
+
+  no-multi-spaces:
+    - error
+    - exceptions:
+        Property: true
+        VariableDeclarator: true
+        ImportDeclaration: true
+      ignoreEOLComments: true
+
+  padded-blocks:
+    - error
+    - blocks: never
+      classes: always
+      switches: never
+    - allowSingleLineBlocks: true
+
+  no-extend-native: off
+
+  object-shorthand: off
+
+  curly:
+    - error
+    - multi-or-nest
+    # - consistent
+
+# end of rules
